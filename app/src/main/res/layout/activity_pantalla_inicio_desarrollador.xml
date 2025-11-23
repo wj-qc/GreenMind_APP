@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/acc_bg">
+
+    <TextView
+        android:id="@+id/tvTituloDev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:shadowColor="@color/white"
+        android:shadowDx="-5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="Panel de Desarrollador"
+        android:textColor="#006022"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Primera fila: Añadir pregunta y Eliminar pregunta -->
+    <LinearLayout
+        android:id="@+id/llAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/acq_bg_1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloDev">
+
+        <ImageButton
+            android:id="@+id/btnAddPregunta"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@null"
+            android:contentDescription="Añadir pregunta"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_add_q" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/amaranth"
+            android:gravity="center"
+            android:text="Añadir pregunta"
+            android:textColor="#006008"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/acq_bg_1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/llAdd"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloDev">
+
+        <ImageButton
+            android:id="@+id/btnEliminarPregunta"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@null"
+            android:contentDescription="Eliminar pregunta"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_delete_q" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/amaranth"
+            android:gravity="center"
+            android:text="Eliminar pregunta"
+            android:textColor="#006008"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Segunda fila: Modificar pregunta y Opciones Devs -->
+    <LinearLayout
+        android:id="@+id/llModificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/acq_bg_1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llAdd">
+
+        <ImageButton
+            android:id="@+id/btnModificarPregunta"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@null"
+            android:contentDescription="Modificar pregunta"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_edit_q" />
+
+        <TextView
+            android:id="@+id/texts"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/amaranth"
+            android:gravity="center"
+            android:text="Modificar pregunta"
+            android:textColor="#006008"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOpcionesDev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/acq_bg_1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/llModificar"
+        app:layout_constraintTop_toBottomOf="@+id/llEliminar">
+
+        <ImageButton
+            android:id="@+id/btnOpcionesDev"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@null"
+            android:contentDescription="Opciones Devs"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_config_q" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/amaranth"
+            android:gravity="center"
+            android:text="Opciones Devs"
+            android:textColor="#006008"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Último botón centrado: Gestionar Devs -->
+    <LinearLayout
+        android:id="@+id/llGestionDev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/acq_bg_1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llModificar">
+
+        <ImageButton
+            android:id="@+id/btnGestionDevs"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@null"
+            android:contentDescription="Gestionar Devs"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_gest_dev" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/amaranth"
+            android:gravity="center"
+            android:text="Gestionar Devs"
+            android:textColor="#006008"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

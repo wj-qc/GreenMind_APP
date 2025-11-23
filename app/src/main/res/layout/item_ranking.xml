@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/borde_item"
+    android:padding="12dp"
+    android:layout_marginBottom="4dp">
+
+    <TextView
+        android:id="@+id/tvPosicion"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Jugador"
+        android:gravity="start"
+        android:paddingStart="8dp"/>
+
+    <TextView
+        android:id="@+id/tvPuntaje"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvCuestionarios"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:gravity="center"/>
+</LinearLayout>

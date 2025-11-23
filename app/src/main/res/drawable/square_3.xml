@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color de fondo del cuadro -->
+    <solid android:color="#5BCC7C" />   <!-- ajusta el tono de verde que quieras -->
+
+    <!-- Radio de las esquinas -->
+    <corners
+        android:radius="24dp"/>
+
+    <padding
+        android:left="16dp"
+        android:top="16dp"
+        android:right="16dp"
+        android:bottom="16dp" />
+</shape>

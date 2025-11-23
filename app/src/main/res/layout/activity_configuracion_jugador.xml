@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qs_bg">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/aci_bg_1"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/leaf" />
+
+        <TextView
+            android:id="@+id/tvTituloConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_weight="2"
+            android:fontFamily="@font/amaranth"
+            android:gravity="center_horizontal|center_vertical"
+            android:shadowColor="@color/white"
+            android:shadowDx="-2"
+            android:shadowDy="5"
+            android:shadowRadius="4"
+            android:text="Configuración"
+            android:textAlignment="center"
+            android:textColor="#014021"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="520dp"
+        android:background="@drawable/aci_bg_2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/acq_bg_1"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/llContraste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    app:srcCompat="@drawable/icon_contr" />
+
+                <TextView
+                    android:id="@+id/tvContraste"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amaranth"
+                    android:text="Contraste"
+                    android:textColor="#05502a"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Switch
+                    android:id="@+id/switchContraste"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTamanoTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/icon_fuente" />
+
+                    <TextView
+                        android:id="@+id/tvTamanoTexto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Tamaño de texto"
+                        android:textColor="#05502a"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/seekBarTamanoTexto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="30"
+                    android:progress="16" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSilenciar"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:background="@drawable/acq_bg_1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="40dp"
+                android:layout_height="55dp"
+                app:srcCompat="@drawable/icon_mute" />
+
+            <TextView
+                android:id="@+id/tvSilenciar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/amaranth"
+                android:text="Silenciar"
+                android:textColor="#05502a"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switchSilenciar"
+                android:layout_width="55dp"
+                android:layout_height="55dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGuardarConfig"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#fed847"
+            android:fontFamily="@font/amaranth"
+            android:text="Guardar"
+            android:textColor="#0b522b"
+            android:textSize="28sp"
+            app:strokeColor="#296c10"
+            app:strokeWidth="4dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
