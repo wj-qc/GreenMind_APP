@@ -23,7 +23,7 @@ import retrofit2.http.POST
 import retrofit2.http.Path
 
 object AppConstantes {
-    const val URL_BASE = "http://192.168.1.35:3000/"
+    const val URL_BASE = "http://######:3000/"
 }
 
 interface WebService {
